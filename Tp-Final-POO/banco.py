@@ -260,12 +260,16 @@ class Banco():
                         self.pagoEnLinea()
                         operacion = False
                     elif opcion == '5':
+                        self.plazoFijo()
                         operacion = False
                     elif opcion == '6':
+                        self.compraMonedaExtranjera()
                         operacion = False
                     elif opcion == '7':
+                        self.inversionBonos()
                         operacion = False
                     elif opcion == '8':
+                        self.pagoSueldos
                         operacion = False
                     elif opcion == '9':
                         self.consultaCbuCuenta()
@@ -277,7 +281,6 @@ class Banco():
                         self.logOut()
                         operacion = True
                         self.logIn()
-
 
 
     #Operaciones validas para caja de ahorros y cta cte
@@ -298,6 +301,7 @@ class Banco():
             self._usuarioConectado.pyme.getCuentasCli()[self._usuarioConectado]._saldo = deposito
             print('-----------------------')
             print(f' Acaba de depositar: {monto} ')
+
 
 
 
@@ -752,7 +756,7 @@ class Banco():
             print('Se cerro la sesion.')
             self._conexion = False
 
-
+print('hola')
 
 if __name__ == '__main__':
     print('-----------------------')
